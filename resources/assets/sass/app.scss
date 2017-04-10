@@ -1,0 +1,233 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "partials/home";
+
+body {
+  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: white;
+}
+.topContainer {
+  background-color: #EEEEEE !important;
+}
+/* css for login.php */
+
+.coincapDiv {
+  height: 100vh !important;
+  background-color: rgba(0,0,0,0.1) !important;
+}
+.loginFormDiv {
+  width: 25% !important;
+  margin:auto !important;
+  margin-top: 80px !important;
+  padding: 30px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  background-color: white;
+}
+.loginFormDiv h2 {
+  margin-bottom: 30px;
+}
+.loginFormDiv button {
+  margin:10px;
+}
+.formInput label {
+  font-size: 15px;
+}
+
+/* css for index.php */
+.coincapLogo {
+  float: left;
+}
+@media (max-width: 768px) {
+  .coincapLogo img {
+    width: 100%;
+  }
+}
+.topNavbar {
+  margin-top: 20px;
+  /*background-color: #eee;*/
+}
+.results tr[visible='false'],
+.no-result{
+  display:none;
+}
+
+.results tr[visible='true']{
+  display:table-row;
+}
+
+.counter{
+  padding:8px;
+  color:#ccc;
+}
+.searchSection {
+  float: right !important;
+  margin-top: 10px;
+}
+.searchSection input {
+  font-size: 15px;
+  padding: 8px 10px;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+.coinChartDiv {
+  margin-top: 25px;
+  border:15px solid #eee;
+  border-radius: 6px;
+}
+.coinChartDiv table {
+  margin-bottom: 0px !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 6px !important;
+}
+#example td a {
+  color: #000;
+}
+
+/*admin/index.php stylesheet*/
+table.dataTable.select tbody tr,
+table.dataTable thead th:first-child {
+  cursor: pointer;
+}
+tr.selected {
+  background-color: #ccc;
+}
+#tableClient td a {
+  color: #000;
+}
+.adminList {
+  margin-top:20px;
+}
+.rightButton {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+//coinDetails.blade.php
+.topBar {
+  background: #333;
+  height: 220px;
+  margin:0px;
+}
+.coinName{
+  font-size: 30px;
+}
+.coinSymbol {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+}
+.nameContainer{
+  box-sizing: border-box;
+  border: 2px solid rgb(92, 92, 92);
+  height: 138px;
+  border-radius: 6px;
+}
+@media (max-width: 768px) {
+  .nameContainer {
+    height: 60px;
+  }
+}
+.coinSummaryBar {
+  padding: 40px 0 30px 0;
+  color: white;
+}
+.marketInfoContainer {
+  padding-left: 60px !important;
+}
+.coinMarketInfoTable {
+  border-spacing: 2px;
+  border-color: grey;
+}
+.titleInfo{
+  color:rgb(136, 136, 136);
+}
+.titleInfo th{
+  width: 200px;
+  font-size: 14px;
+  text-align: left;
+  line-height: 36px;
+  border-bottom: 2px solid rgb(68, 68, 68);
+}
+.valueInfo td {
+  font-size: 14px;
+  text-align: left;
+}
+
+.coinMarketInfoPrice {
+  font-weight: 500;
+  font-size: 30px;
+}
+.coinPercentage {
+  color: rgb(206, 92, 92);
+
+}
+
+// Chart css
+#chartdiv {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  margin-bottom: 30px !important;
+  width	: 100%;
+  height: 750px !important;
+}
+
+.title{
+  color: black !important;
+  text-align : center !important;
+  margin-top: 30px !important;
+}
+.footer {
+  color: #555555;
+  text-align: center;
+  margin-top: 30px;
+}
+.marginClass {
+  margin-top: 60px !important;
+}
+
+.container{
+  width:90%;
+  margin:auto;
+}
+.coinTable tbody tr td{
+  text-align: center;
+}
+.coinTable thead tr th {
+  text-align: center;
+  color: whitesmoke;
+}
+.coinTable{
+  width: 100%;
+  background-color: #EEEEEE;
+  tbody{
+    height:200px;
+    overflow-y:auto;
+    width: 100%;
+  }
+  thead,tbody,tr,td,th{
+    display:block;
+  }
+  tbody{
+    td{
+      float:left;
+    }
+  }
+  thead {
+    tr{
+      th{
+        float:left;
+        background-color: #939393;
+        border-color:#7f7575;
+      }
+    }
+  }
+}
+
